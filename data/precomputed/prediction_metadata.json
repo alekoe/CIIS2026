@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-09-23T14:49:28Z",
+  "device": "cpu",
+  "torch_version": "2.14.0+cpu",
+  "audio": {
+    "model": "superb/wav2vec2-base-superb-er",
+    "parameters": 94569617,
+    "sampling_rate_hz": 16000,
+    "raw_labels": {
+      "0": "neu",
+      "1": "hap",
+      "2": "ang",
+      "3": "sad"
+    }
+  },
+  "video": {
+    "model": "trpakov/vit-face-expression",
+    "parameters": 85804039,
+    "frames_per_clip": 5,
+    "crop": "center_face_crop(scale=0.62)",
+    "temporal_aggregation": "arithmetic mean of canonicalized frame probabilities",
+    "raw_labels": {
+      "0": "angry",
+      "1": "disgust",
+      "2": "fear",
+      "3": "happy",
+      "4": "neutral",
+      "5": "sad",
+      "6": "surprise"
+    }
+  },
+  "canonical_labels": [
+    "angry",
+    "happy",
+    "neutral",
+    "sad"
+  ],
+  "clips": 80,
+  "elapsed_seconds": 102.86928115599994
+}

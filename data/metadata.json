@@ -1,0 +1,36 @@
+{
+  "title": "RAVDESS CIIS 2026 workshop subset",
+  "source": "https://zenodo.org/records/1188976",
+  "doi": "10.5281/zenodo.1188976",
+  "license": "CC BY-NC-SA 4.0",
+  "actors": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "actor_sex_convention": "Odd-numbered actors are male; even-numbered actors are female.",
+  "classes": [
+    "neutral",
+    "happy",
+    "sad",
+    "angry"
+  ],
+  "clips": 80,
+  "selection": "20 clips per class; 40 male and 40 female; speech, audio-video modality.",
+  "encoding": "MP4 H.264 320px wide at 15 fps; AAC mono 16 kHz at 64 kb/s.",
+  "models": {
+    "audio": "superb/wav2vec2-base-superb-er",
+    "video": "trpakov/vit-face-expression",
+    "video_frames_per_clip": 5,
+    "face_preprocessing": "Notebook center_face_crop(scale=0.62)",
+    "label_order": [
+      "angry",
+      "happy",
+      "neutral",
+      "sad"
+    ]
+  }
+}
